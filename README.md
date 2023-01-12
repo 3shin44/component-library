@@ -1,24 +1,11 @@
-# info-clm
+# 常用元件與函式庫
 
-## Project setup
-```
-npm install
-```
+## 預覽連結
+[連結](https://3shin44.github.io/component-library/dist/#/notification-management)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+https://3shin44.github.io/component-library/dist/#/notification-management
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 說明
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+本專案為常用元件與函式庫，僅供查詢使用
