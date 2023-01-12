@@ -31,6 +31,6 @@ p{
     margin: 0;
 }
 
-.test{
-    background-color: red;
+.nav-height{
+    min-height: calc( 100vh - 50px );
 }
