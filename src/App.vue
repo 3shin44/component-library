@@ -62,7 +62,7 @@
           {
             type: "title",
             routerLink: "",
-            pageName: "元件類"
+            pageName: "元件"
           },
           {
             type: "link",
@@ -77,12 +77,27 @@
           {
             type: "title",
             routerLink: "",
-            pageName: "語法類"
+            pageName: "語法"
           },
           {
             type: "link",
-            routerLink: "notification-management",
-            pageName: "通知管理"
+            routerLink: "sort-by-date",
+            pageName: "陣列中物件排序"
+          },
+          {
+            type: "title",
+            routerLink: "iphone-fullscreen",
+            pageName: "版面配置(跑版)"
+          },
+          {
+            type: "link",
+            routerLink: "iphone-fullscreen",
+            pageName: "iPhone跑版"
+          },
+          {
+            type: "title",
+            routerLink: "",
+            pageName: "專案環境建置"
           },
         ]
       })
