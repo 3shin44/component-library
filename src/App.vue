@@ -10,9 +10,12 @@
     <nav class="d-flex flex-column col-2 p-2 info-shadow nav-height">
       <!-- render router list by "renderList" -->
       <div v-for="(item, index) in renderList" :key="index">
+        <!-- Type: Catagory -->
         <div v-if="item.type == 'title'">
-          <p class="fs-6 fw-bolder"><font-awesome-icon icon="fa-solid fa-circle-dot" /> {{item.pageName}}</p>
+          <p class="fs-6 fw-bolder"><font-awesome-icon :icon="item.routerLink" /> {{item.pageName}}</p>
         </div>
+
+        <!-- Type: Article -->
         <div v-else>
           <router-link :to="item.routerLink" class="btn btn-light w-100"
             :class="{ 'active' : $route.name == item.routerLink }">
@@ -59,9 +62,11 @@
       const data = reactive({
         // 頁面清單
         renderList: [
+          // Catagory: type="title", routerLink = "fontAwesome string", pageName="title name"
+          // Article: type="link", routerLink = "router path", pageName="article name"
           {
             type: "title",
-            routerLink: "",
+            routerLink: "fa-solid fa-cubes",
             pageName: "元件"
           },
           {
@@ -76,7 +81,7 @@
           },
           {
             type: "title",
-            routerLink: "",
+            routerLink: "fa-solid fa-code",
             pageName: "語法"
           },
           {
@@ -86,7 +91,7 @@
           },
           {
             type: "title",
-            routerLink: "iphone-fullscreen",
+            routerLink: "fa-solid fa-chart-area",
             pageName: "版面配置(跑版)"
           },
           {
@@ -96,7 +101,7 @@
           },
           {
             type: "title",
-            routerLink: "",
+            routerLink: "fa-solid fa-gears",
             pageName: "專案環境建置"
           },
         ]
