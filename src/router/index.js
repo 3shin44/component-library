@@ -4,6 +4,7 @@ import QueryContract from '../views/QueryContract.vue'
 import NotificationManagement from '../views/NotificationManagement.vue'
 import IphoneFullscreen from '../views/IphoneFullscreen.vue'
 import SortByDate from '../views/SortByDate.vue'
+import TestField from '../views/TestField.vue'
 
 const routes = [
   {
@@ -35,6 +36,12 @@ const routes = [
     path: '/iphone-fullscreen',
     name: 'iphone-fullscreen',
     component: IphoneFullscreen
+  },
+  {
+    // TestField
+    path: '/test-field',
+    name: 'test-field',
+    component: TestField
   },
   // {
   //   path: '/HomeView',

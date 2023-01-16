@@ -70,16 +70,6 @@
             pageName: "元件"
           },
           {
-            type: "link",
-            routerLink: "customer-management-preview",
-            pageName: "客戶管理"
-          },
-          {
-            type: "link",
-            routerLink: "query-contract",
-            pageName: "合約查詢"
-          },
-          {
             type: "title",
             routerLink: "fa-solid fa-code",
             pageName: "語法"
@@ -103,6 +93,26 @@
             type: "title",
             routerLink: "fa-solid fa-gears",
             pageName: "專案環境建置"
+          },
+          {
+            type: "title",
+            routerLink: "fa-solid fa-gears",
+            pageName: "LEGACY"
+          },
+          {
+            type: "link",
+            routerLink: "test-field",
+            pageName: "TEST FIELD"
+          },
+          {
+            type: "link",
+            routerLink: "customer-management-preview",
+            pageName: "客戶管理"
+          },
+          {
+            type: "link",
+            routerLink: "query-contract",
+            pageName: "合約查詢"
           },
         ]
       })
