@@ -9,7 +9,7 @@
 
     <div v-for="(item, index) in renderList" :key="index">
       <label :for="item.id">id: {{ item.id }}, Limit: {{ limitLength(item.id) }}  </label>
-      <input type="text" :id="item.id" :maxlength="limitLength(item.id)" @keyup="preventHalf(item.id)">
+      <input type="text" :id="item.id" :maxlength="limitLength(item.id)" @keyup="preventHalf(item.id)" @change="preventHalf(item.id)">
     </div>
 
   </div>
